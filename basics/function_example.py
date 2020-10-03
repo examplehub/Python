@@ -20,11 +20,11 @@ def add(a: int, b: int) -> int:
     return a + b
 
 
-def add(*args):
+def add_more(*args):
     """
     Arbitrary Arguments
 
-    >>> add(1, 2, 3)
+    >>> add_more(1, 2, 3)
     6
     """
     return sum(args)
