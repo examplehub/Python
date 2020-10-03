@@ -1,6 +1,6 @@
-class Student:
+class People:
     """
-    >>> jack = Student("Jack", 23)
+    >>> jack = People("Jack", 23)
     >>> jack.name
     'Jack'
     >>> jack.age
@@ -24,6 +24,20 @@ class Student:
 
     def print_info(self):
         print(f"my name is {self.name}, my age is {self.age}")
+
+
+class Student(People):
+    """
+    >>> stu = Student("Tom", 19, 99)
+    >>> stu.print_info()
+    my name is Tom, my age is 19, my grade is 99
+    """
+    def __init__(self, name, age, grade):
+        super().__init__(name, age)
+        self.grade = grade
+
+    def print_info(self):
+        print(f"my name is {self.name}, my age is {self.age}, my grade is {self.grade}")
 
 
 class TodoClass:
