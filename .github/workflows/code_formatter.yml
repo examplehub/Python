@@ -10,3 +10,7 @@ jobs:
       - uses: actions/setup-python@v2
       - uses: psf/black@stable
       - run: black --check .
+      - name: Commit black changes
+        if: failure()
+        run: |
+          echo "Need to be formatted."
