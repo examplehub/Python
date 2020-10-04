@@ -6,20 +6,14 @@ def open_file(filename: str):
     >>> import os
     >>> if os.path.exists("../LICENSE"):
     ...     f = open_file("../LICENSE")
-    ...     f is not None
-    ...     f.readline().strip() == "Apache License"
-    ...     f.readline().strip() == "Version 2.0, January 2004"
+    ...     _ = f is not None
+    ...     _ = f.readline().strip() == "Apache License"
+    ...     _ = f.readline().strip() == "Version 2.0, January 2004"
     ...     f.close()
-    ...     f.closed
+    ...     _ = f.closed
     ...     with open("../LICENSE") as f:
-    ...         f.readline().strip() == "Apache License"
-    ...         f.readline().strip() == "Version 2.0, January 2004"
-    True
-    True
-    True
-    True
-    True
-    True
+    ...         _ = f.readline().strip() == "Apache License"
+    ...         _ = f.readline().strip() == "Version 2.0, January 2004"
     """
     try:
         f = open(filename)
