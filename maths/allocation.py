@@ -32,7 +32,7 @@ def allocation(number_of_bytes: int, partitions: int):
     return allocations
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
