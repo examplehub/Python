@@ -27,7 +27,7 @@ def main() -> None:
     """
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

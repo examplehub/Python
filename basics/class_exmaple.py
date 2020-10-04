@@ -32,6 +32,7 @@ class Student(People):
     >>> stu.print_info()
     my name is Tom, my age is 19, my grade is 99
     """
+
     def __init__(self, name, age, grade):
         super().__init__(name, age)
         self.grade = grade
@@ -44,7 +45,7 @@ class TodoClass:
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

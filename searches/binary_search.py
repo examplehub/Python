@@ -33,7 +33,7 @@ def binary_search_recursion(array, key, left: int = 0, right: int = None) -> int
         return binary_search_recursion(array, key, left, mid - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

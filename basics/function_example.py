@@ -51,9 +51,9 @@ def calculate(a: int, operator: str, b: int) -> int:
         return a + b
     elif operator == "-":
         return a - b
-    elif operator == '*':
+    elif operator == "*":
         return a * b
-    elif operator == '/':
+    elif operator == "/":
         return a // b
     else:
         raise ValueError("Invalid operator")
@@ -65,7 +65,10 @@ def intro(**kwargs):
     key=name, value=Python
     key=age, value=29
     """
-    for key, value, in kwargs.items():
+    for (
+        key,
+        value,
+    ) in kwargs.items():
         print(f"key={key}, value={value}")
 
 
@@ -118,7 +121,7 @@ def factorial(n: int) -> int:
     return 1 if n == 0 or n == 1 else n * factorial(n - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
