@@ -33,10 +33,12 @@ def aliquot_sum(number: int) -> int:
     """
     if number <= 0 or not isinstance(number, int):
         raise ValueError("number must be positive")
-    return sum(divisor for divisor in range(1, number // 2 + 1) if number % divisor == 0)
+    return sum(
+        divisor for divisor in range(1, number // 2 + 1) if number % divisor == 0
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

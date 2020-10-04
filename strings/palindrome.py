@@ -80,10 +80,10 @@ def is_palindrome_reversion(s: str) -> bool:
     elif s[0] != s[len(s) - 1]:
         return False
     else:
-        return is_palindrome_reversion(s[1:len(s) - 1])
+        return is_palindrome_reversion(s[1 : len(s) - 1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

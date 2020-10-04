@@ -1,0 +1,21 @@
+name: Code Formatter
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - run: pip install black
+      - run: black --check .
+      - name: Commit black changes
+        if: failure()
+        run: |
+          black .
+          git config --global user.name github-actions
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git commit -am "Formatted with psf/black"
+          git push --force origin HEAD:$GITHUB_REF

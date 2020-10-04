@@ -3,7 +3,11 @@ https://en.wikipedia.org/wiki/Linear_search
 """
 
 
-def linear_search_recursion(array, key, length: int = None, ) -> int:
+def linear_search_recursion(
+    array,
+    key,
+    length: int = None,
+) -> int:
     """
     Linear search algorithm using recursion.
     :param array: the array to be searched.
@@ -29,7 +33,7 @@ def linear_search_recursion(array, key, length: int = None, ) -> int:
         return linear_search_recursion(array, key, length - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

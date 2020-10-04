@@ -24,7 +24,7 @@ def linear_search(array, key) -> int:
     return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
