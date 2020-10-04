@@ -80,6 +80,20 @@ def main():
     >>> intro
     "My name is Python. I'am 29."
 
+    >>> import math
+    >>> pi_str = "pi = {:.2f}"
+    >>> pi_str = pi_str.format(math.pi)
+    >>> pi_str
+    'pi = 3.14'
+
+    >>> pi_str = f"pi = {math.pi}"
+    >>> pi_str
+    'pi = 3.141592653589793'
+
+    >>> pi_str = f"pi = {math.pi:.2f}"
+    >>> pi_str
+    'pi = 3.14'
+
     >>> my_str = "abc"
     >>> del my_str
     >>> 'my_str' not in locals()
