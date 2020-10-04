@@ -12,7 +12,7 @@ def absolute_max(array):
     return max(array, key=abs)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

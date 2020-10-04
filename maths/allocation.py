@@ -20,14 +20,14 @@ def allocation(number_of_bytes: int, partitions: int):
     if partitions <= 0:
         raise ValueError("partitions must be positive number")
     if partitions >= number_of_bytes:
-        raise ValueError(
-            "partitions can't be greater or equal to number_of_bytes"
-        )
+        raise ValueError("partitions can't be greater or equal to number_of_bytes")
     allocations = []
     bytes_per_partition = number_of_bytes // partitions
     for i in range(partitions):
         start_bytes = i * bytes_per_partition + 1
-        end_bytes = number_of_bytes if i == partitions - 1 else (i + 1) * bytes_per_partition
+        end_bytes = (
+            number_of_bytes if i == partitions - 1 else (i + 1) * bytes_per_partition
+        )
         allocations.append(f"{start_bytes}-{end_bytes}")
     return allocations
 
