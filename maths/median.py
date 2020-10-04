@@ -22,7 +22,8 @@ def median(numbers):
     numbers = sorted(numbers)
     mid_index = len(numbers) // 2
     return (
-        (numbers[mid_index] + numbers[mid_index - 1]) / 2 if mid_index % 2 == 0
+        (numbers[mid_index] + numbers[mid_index - 1]) / 2
+        if mid_index % 2 == 0
         else numbers[mid_index]
     )
 
