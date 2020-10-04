@@ -13,6 +13,11 @@ def median(numbers):
     6
     >>> median([1, 2, 3, 4, 5, 6, 8, 9])
     4.5
+    >>> import statistics
+    >>> import random
+    >>> numbers = random.sample(range(-50, 50), k=100)
+    >>> statistics.median(numbers) == median(numbers)
+    True
     """
     numbers = sorted(numbers)
     mid_index = len(numbers) // 2
