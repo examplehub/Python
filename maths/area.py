@@ -6,6 +6,7 @@ def circle_area(radius: float) -> float:
     0.0
     """
     import math
+
     return math.pi * radius * radius
 
 
