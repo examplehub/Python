@@ -13,7 +13,7 @@ def fahrenheit_to_celsius(temperature: float) -> float:
     return 5 * (temperature - 32) / 9
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
