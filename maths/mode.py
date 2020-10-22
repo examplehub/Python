@@ -9,13 +9,8 @@ def mode(numbers):
     :param numbers: the numbers
     :return: mode number of the numbers.
 
-    >>> import statistics
-    >>> mode([1, 2, 2, 3, 4, 7, 9]) == statistics.mode([1, 2, 2, 3, 4, 7, 9])
-    True
-    >>> import random
-    >>> numbers = random.sample(range(-50, 50), 100)
-    >>> mode(numbers) == statistics.mode(numbers)
-    True
+    >>> mode([1, 2, 2, 3, 4, 7, 9])
+    2
     """
     max_count = 1
     mode_number = numbers[0]
