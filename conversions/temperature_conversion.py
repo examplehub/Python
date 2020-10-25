@@ -21,10 +21,11 @@ def celsius_to_fahrenheit(temperature: float) -> float:
     >>> celsius_to_fahrenheit(30.5)
     86.9
     """
-    return round((temperature * 9/5) + 32, 2)
+    return round((temperature * 9 / 5) + 32, 2)
 
 
 if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
+
