@@ -26,7 +26,10 @@ def reverse2(original: str) -> str:
     original = list(original)
     i, j = 0, len(original) - 1
     while i < j:
-        original[i], original[j] = original[j], original[i],
+        original[i], original[j] = (
+            original[j],
+            original[i],
+        )
         i += 1
         j -= 1
     return "".join(original)
