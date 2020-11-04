@@ -14,7 +14,7 @@ def sum_to_n(n: int) -> int:
     return (1 + n) * n // 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

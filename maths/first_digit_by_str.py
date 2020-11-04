@@ -12,7 +12,7 @@ def first_digit(number: int) -> int:
     return int(str(abs(number))[0])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

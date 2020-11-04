@@ -13,7 +13,7 @@ def first_digit_recursion(number: int) -> int:
     return number if number < 10 else first_digit_recursion(number // 10)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

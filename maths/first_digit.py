@@ -15,7 +15,7 @@ def first_digit(number: int) -> int:
     return number
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

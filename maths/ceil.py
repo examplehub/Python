@@ -8,7 +8,7 @@ def ceil(number) -> int:
     return int(number) if number - int(number) <= 0 else int(number) + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
