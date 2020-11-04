@@ -3,7 +3,7 @@ def add(first_number, second_number):
     >>> add(1, 2)
     3
     >>> add(1.1, 2.2)
-    3.3
+    3.3000000000000003
     >>> add(-1.1, 1.1)
     0.0
     """

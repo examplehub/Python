@@ -8,7 +8,7 @@ def factorial(number: int) -> int:
     >>> import math
     >>> numbers = list(range(0, 50))
     >>> for num in numbers:
-    ...     assert factorial(num) == math.factorial_recursion(num)
+    ...     assert factorial(num) == math.factorial(num)
     >>> factorial(-1)
     Traceback (most recent call last):
     ...
