@@ -19,7 +19,7 @@ def is_cube_number(number: int) -> bool:
     return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

@@ -16,13 +16,10 @@ def factorial_recursion(number: int) -> int:
     """
     if number < 0:
         raise ValueError("factorial() not defined for negative values")
-    return (
-        1 if number == 0 or number == 1
-        else number * factorial_recursion(number - 1)
-    )
+    return 1 if number == 0 or number == 1 else number * factorial_recursion(number - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
