@@ -10,7 +10,7 @@ def sum_to_n_recursion(number: int) -> int:
     return 0 if number == 0 else number + sum_to_n_recursion(number - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()

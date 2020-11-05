@@ -6,7 +6,7 @@ def sum_big_numbers(first_number: int, second_number: int):
     return first_number + second_number
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from doctest import testmod
 
     testmod()
