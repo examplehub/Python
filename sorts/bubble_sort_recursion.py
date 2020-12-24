@@ -24,7 +24,10 @@ def bubble_sort(array, length: int = 0):
     swapped = False
     for i in range(length - 1):
         if array[i] > array[i + 1]:
-            array[i], array[i + 1] = array[i + 1], array[i],
+            array[i], array[i + 1] = (
+                array[i + 1],
+                array[i],
+            )
             swapped = True
     return array if not swapped else bubble_sort(array, length - 1)
 
