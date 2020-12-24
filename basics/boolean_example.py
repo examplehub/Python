@@ -8,6 +8,10 @@ def main():
     False
     >>> 3 < 4
     True
+    >>> 3 < 4 < 5
+    True
+    >>> 3 < 4 > 5
+    False
 
     >>> name = "Python"
     >>> age = 29
@@ -41,6 +45,10 @@ def main():
     >>> bool(1)
     True
     >>> bool("hi")
+    True
+    >>> bool([])
+    False
+    >>> bool([''])
     True
     """
 
