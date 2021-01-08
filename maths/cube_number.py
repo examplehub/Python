@@ -11,11 +11,15 @@ def is_cube_number(number: int) -> bool:
     False
     >>> is_cube_number(11)
     False
+    >>> is_cube_number(2**20)
+    False
     """
     number = abs(number)
     for i in range(0, number + 1):
         if i ** 3 == number:
             return True
+        if i ** 3 > number:
+            return False
     return False
 
 
