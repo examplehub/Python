@@ -28,7 +28,8 @@ def shell_sort(array):
             while j >= 0 and insert_value < array[j]:
                 array[j + gap] = array[j]
                 j -= gap
-            array[j + gap] = insert_value
+            if j != i - gap:
+                array[j + gap] = insert_value
         gap >>= 1
     return array
 
