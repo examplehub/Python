@@ -19,7 +19,11 @@ def fibonacci(number: int) -> int:
     >>> fibonacci(8)
     21
     """
-    return number if number == 0 or number == 1 else fibonacci(number - 1) + fibonacci(number - 2)
+    return (
+        number
+        if number == 0 or number == 1
+        else fibonacci(number - 1) + fibonacci(number - 2)
+    )
 
 
 if __name__ == "__main__":
